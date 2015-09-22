@@ -1,0 +1,16 @@
+window_sizes 1280 962 300 900 682 82
+diagrams
+  active  classdiagram_ref 128065 // Von Neumann
+    974 804 100 4 0 0
+end
+show_stereotypes
+open
+  class_ref 128065 // Memory
+  class_ref 128321 // Stack
+  class_ref 128449 // CPU
+  class_ref 128577 // IO
+  class_ref 128833 // MachineLauncher
+  class_ref 128961 // Instruction
+  class_ref 129089 // Program
+end
+end
