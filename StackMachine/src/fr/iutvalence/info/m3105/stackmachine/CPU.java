@@ -28,7 +28,7 @@ public class CPU
 	public final static int DUP		= 0x14;
 	public final static int POP		= 0x15;
 	
-	// TODO something is missing here...
+	// TODO something is missing here... or not !
 
 	public void run()
 	{
