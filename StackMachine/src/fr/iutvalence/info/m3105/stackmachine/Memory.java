@@ -6,6 +6,8 @@ public class Memory {
 	private int start;
 
 	public Memory(int start, int end) throws InvalidParametersException {
+		if(start <0 || end<0 || start < end)
+			throw new InvalidParametersException();
 		this.start = start;
 		this.end = end;
 	}
