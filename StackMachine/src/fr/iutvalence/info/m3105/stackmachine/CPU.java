@@ -43,8 +43,8 @@ public class CPU
 			while (true)
 			{
 				
-				opCode = this.callStack.pop();
 				// System.err.print("@" + this.programCounter + ": ");
+				opCode = this.programMemory.get(this.PC);
 				switch (opCode)
 				{
 					case HALT:
@@ -54,8 +54,8 @@ public class CPU
 						return;
 					}
 					case PUSH:
-					{
-						// TODO something is missing here...
+					{					
+						this.expStack.push(this.callStack.pop());
 						break;
 					}
 					case ADD:
